@@ -68,15 +68,8 @@
 
 //Opgave 3: Leon
 
-
-
-
-
-
-
-
-
-
+const bigPictureEl = document.querySelector(".bigPicture")
+bigPictureEl.style.background = "url('https://cdn.pixabay.com/photo/2017/09/28/13/18/amusement-2795490_960_720.jpg') no-repeat center center";
 
 
 

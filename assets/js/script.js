@@ -38,6 +38,26 @@
 
 //Opgave 2: Noah
 
+document.querySelector("h1").onmouseenter = function() {mouseEnter()};
+document.querySelector("h1").onmouseleave = function() {mouseLeave()};
+
+
+function mouseEnter() { 
+    document.querySelector("h1").style.transform = "rotate(-9deg)";
+  
+
+    document.querySelector("h1").style.transition = "transform 0.1s";
+     }
+
+     function mouseLeave() { 
+        document.querySelector("h1").style.transform = "rotate(9deg)";
+        document.querySelector("h1").style.transition = "transform 0.1s";
+     }
+
+     
+
+
+
 
 
 

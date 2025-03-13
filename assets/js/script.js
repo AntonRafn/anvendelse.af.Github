@@ -3,7 +3,11 @@
 
 //Opgave 1: Tobias
 //
+const socialElements = document.querySelectorAll(".social a");
 
+socialElements.forEach(function(socialElement){
+    socialElement.style.color = "blue"
+})
 
 
 

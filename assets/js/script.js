@@ -94,11 +94,11 @@
 
 //Opgave 4: Anton
 
-
-
-
-
-
+const headEl = document.querySelector("head")
+const faviconEl = document.createElement("link")
+faviconEl.rel = "icon";
+faviconEl.href = "http://hearthstoneapi.com/favicon.ico"
+headEl.append(faviconEl)
 
 
 
@@ -220,3 +220,19 @@
 
 /*6. Som I måske har lagt mærke til, er der en .crazyPopup box som står udenfor body (se i css...prøv f.eks. at ændre property "right" til value -200 og 0). Opgaven er at den nu "popper up" når personer har scrollet 100px ned og forsvinde igen når de scroller op under 100px igen  - lookie: https://drive.google.com/file/d/10aSqzcL3br8DU5AhggE54Pal0Z3s-x5y/view */
 //Opgave 6: Anton
+
+const crazyPopupEl = document.querySelector(".crazyPopup")
+
+
+window.addEventListener("scroll",crazyFunction)
+
+    function crazyFunction() {
+        if (window.scrollY >= 100) {
+            crazyPopupEl.style.right = "0px"; 
+        } else {
+            crazyPopupEl.style.right = "-400px";
+        } 
+    }
+
+
+
